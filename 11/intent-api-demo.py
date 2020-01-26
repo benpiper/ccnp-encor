@@ -61,4 +61,3 @@ wrongurl="https://sandboxdnac.cisco.com/api/v1/networkdevices"
 requests.get(wrongurl, headers=headers)
 
 # Documentation for the Intent API is at https://developer.cisco.com/docs/dna-center/api/1-3-3-x/
-# Following is a list of HTTP status codes
