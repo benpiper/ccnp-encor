@@ -1,4 +1,4 @@
-# CCNP Enterprise Certification Study Guide Exam 300-401
+# CCNP Enterprise Certification Study Guide: Exam 350-401
 
 ## Exercise files
 
