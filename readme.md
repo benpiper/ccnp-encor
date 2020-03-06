@@ -2,7 +2,11 @@
 
 ## Exercise files
 
+[Chapter 7](7)
+
 [Chapter 11](11)
+
+[Chapter 12](12)
 
 ## Study Resources
 
