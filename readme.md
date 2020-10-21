@@ -4,9 +4,9 @@
 
 [Chapter 7](7)
 
-[Chapter 11](11)
+[Chapter 8](8)
 
-[Chapter 12](12)
+[Chapter 11](11)
 
 ## Study Resources
 
