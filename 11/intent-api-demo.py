@@ -1,20 +1,19 @@
 # Import the Python libraries we'll need to use the Intent API
 import json
 import requests
-import urllib3
 from requests.auth import HTTPBasicAuth
 
 # Using the username "devnetuser" and the password "Cisco123!"
-# authenticate to DNAC to obtain a token that we'll use in future API requests
+# authenticate to Cisco Catalyst Center to obtain a token that we'll use in future API requests
 
 response = requests.post("https://sandboxdnac.cisco.com/api/system/v1/auth/token", \
     auth=HTTPBasicAuth("devnetuser","Cisco123!"))
 
 # The response code is HTTP 200 OK, which means that the request was successful
-response
+print(response)
 
 # View the response in JSON format
-response.json()
+print(response.json())
 
 # The format of JSON is that of a key and value pair. "Token" is the key and
 # the long random string that follows it is the value.
@@ -27,7 +26,7 @@ headers = {
               'x-auth-token': response.json()["Token"]
           }
 
-# We'll use the network-device API to obtain information on network devices in Cisco DNAC
+# We'll use the network-device API to obtain information on network devices in Cisco Catalyst Center
 url="https://sandboxdnac.cisco.com/dna/intent/api/v1/network-device"
 
 # Send a GET request
@@ -60,4 +59,4 @@ requests.get(url)
 wrongurl="https://sandboxdnac.cisco.com/api/v1/networkdevices"
 requests.get(wrongurl, headers=headers)
 
-# Documentation for the Intent API is at https://developer.cisco.com/docs/dna-center/api/1-3-3-x/
+# Documentation for the Catalyst Center Intent API is at https://developer.cisco.com/docs/dna-center/
