@@ -6,6 +6,8 @@
 
 [Chapter 8](8)
 
+[Chapter 10](10)
+
 [Chapter 11](11)
 
 ## Study Resources
